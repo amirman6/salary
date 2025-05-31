@@ -7,7 +7,7 @@ Created on Mon May 16 15:19:05 2022
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
+#import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
 from PIL import Image
@@ -119,6 +119,7 @@ if selected == "Salary Prediction":
 
 # analytics
 if selected == "Analytics":
+    import seaborn as sns
     df_salary = pickle.load(open('df_salary','rb'))
 
     st.write("""
