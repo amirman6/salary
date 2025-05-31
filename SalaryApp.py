@@ -75,7 +75,7 @@ if selected == "Salary Prediction":
     
     # results output
     if st.button('Predict Salary'):
-        n_bootstraps = 50
+        n_bootstraps = 25
         model_list=[]
         for i in range(n_bootstraps):
             model_list.append('model'+str(i))  
